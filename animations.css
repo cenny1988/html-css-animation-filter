@@ -33,14 +33,10 @@
     transition: all 1s;
 }
 .ex-5-square:hover {
-    width: 100px;
-    height: 100px;
-    margin: 0px
+    transform: scale(2);
 }
 .ex-5-square:active {
-    width: 20px;
-    height: 20px;
-    margin: 40px
+    transform: scale(0.5);
 }
 /* es.6 */
 .ex-6-img:hover {
@@ -60,6 +56,14 @@
 }
 .ex-8-img:hover {
     border-radius: 25px;
-    /* filter: grayscale(1); */
+    filter: grayscale(.7) sepia(.6) ; 
+}
+/* es.9 */
+.ex-9-img {
+    transition: all 2s;
+}
+.ex-9-img:hover {
+    border-radius: 25px;
+    transform: scale(1.5);
     filter: grayscale(.7) sepia(.6) ; 
 }
