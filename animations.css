@@ -91,3 +91,32 @@
         transform: rotate(0);
     }
 }
+/* es.12 */
+.ex-12-button:hover>.ex-12-top-white {
+    animation: gotop 2s linear;  
+}
+.ex-12-button:hover>.ex-12-bottom-white{
+    animation: gobottom 2s linear;  
+}
+@keyframes gotop {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    0% {
+        left: 10%;
+    }
+}
+@keyframes gobottom {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    0% {
+        right: 20%;
+    }
+}
