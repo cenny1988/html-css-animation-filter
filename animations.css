@@ -69,10 +69,25 @@
 }
 /* es.10 */
 .ex-10-icon {
-    animation:spin 1s linear infinite
+    animation:spin-reverse 1s linear infinite
 }
-@keyframes spin { 
+@keyframes spin-reverse { 
     100% { 
         transform:rotate(-360deg); 
     } 
+}
+/* es.11 */
+.ex-11-icon:hover {
+    animation:spin 2s linear;  
+}
+@keyframes spin { 
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(300deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
