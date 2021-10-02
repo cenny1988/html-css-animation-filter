@@ -67,3 +67,12 @@
     transform: scale(1.5);
     filter: grayscale(.7) sepia(.6) ; 
 }
+/* es.10 */
+.ex-10-icon {
+    animation:spin 1s linear infinite
+}
+@keyframes spin { 
+    100% { 
+        transform:rotate(-360deg); 
+    } 
+}
